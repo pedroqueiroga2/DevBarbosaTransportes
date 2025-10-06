@@ -12,16 +12,41 @@ header{
     color:$verdeB;  
     display: flex;
     align-items: center;
-    
-    gap: 10px;
-   
 
+}
+
+// Header Icons ----------
+.header-icons
+{
+    display: flex;
+    gap: 5px;
 }
 .header-icons a
 {
-    color: $verdeB;
+    
+    i
+    {
+        color: $verdeB;
+    }
+    
 }
 .header-icons a:hover
 {
-    color: $AzulB;
+    i
+    {
+        animation: translateY 0.8;
+        color: $AzulB;
+    }
+    
+}
+
+@keyframes translateY {
+    from
+    {
+        transform: translateY(0) scale (1);
+    }
+    to
+    {
+        transform: translateY(-8px) scale (1.1);
+    }
 }

@@ -30,23 +30,23 @@ header{
     }
     
 }
-.header-icons a:hover
-{
-    i
+    .header-icons a:hover
     {
-        animation: translateY 0.8;
-        color: $AzulB;
+        i
+        {
+            animation: translateY 0.8s;
+            color: $AzulB;
+        }
+        
     }
-    
-}
 
 @keyframes translateY {
     from
     {
-        transform: translateY(0) scale (1);
+        transform: translateY(0) scale(1);
     }
     to
     {
-        transform: translateY(-8px) scale (1.1);
+        transform: translateY(-8px) scale(1.1);
     }
 }

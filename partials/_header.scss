@@ -1,0 +1,27 @@
+header{
+    width: 100%;
+}
+.header-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-link, .header-link a
+{
+    color:$verdeB;  
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+   
+
+}
+.header-icons a
+{
+    color: $verdeB;
+}
+.header-icons a:hover
+{
+    color: $AzulB;
+}

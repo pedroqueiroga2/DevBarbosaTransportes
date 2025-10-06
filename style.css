@@ -5,6 +5,31 @@
   outline: 0;
 }
 
+header {
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-link, .header-link a {
+  color: #5CFFBB;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-icons a {
+  color: #5CFFBB;
+}
+
+.header-icons a:hover {
+  color: #172C3B;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;

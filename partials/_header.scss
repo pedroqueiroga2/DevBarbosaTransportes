@@ -1,18 +1,32 @@
 header{
     width: 100%;
 }
+
+
 .header-content
 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-.header-link, .header-link a
+
+
+//header botões
+
+.header-link1, .header-link1 a, .header-link2, .header-link2 a
 {
     color:$verdeB;  
     display: flex;
     align-items: center;
+    gap: 30px;
+}
 
+.header-link1 a:hover, .header-link2 a:hover
+{
+    color:$AzulB;  
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 // Header Icons ----------

@@ -28,4 +28,8 @@ img {
 a {
   cursor: pointer;
   text-decoration: none;
+}
+
+.header-icons {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

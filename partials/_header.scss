@@ -3,6 +3,8 @@ header{
 }
 
 
+
+
 .header-content
 {
     display: flex;
@@ -66,3 +68,14 @@ header{
     }
 }
 //-----------------------
+
+//HEADER LOGO
+
+.header-logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+

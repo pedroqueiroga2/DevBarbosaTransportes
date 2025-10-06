@@ -23,13 +23,14 @@ header{
 
 .header-link1 a:hover, .header-link2 a:hover
 {
+    animation: translateY 1s infinite alternate;
     color:$AzulB;  
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-// Header Icons ----------
+//Header Icons ----------
 .header-icons
 {
     display: flex;
@@ -64,3 +65,4 @@ header{
         transform: translateY(-8px) scale(1.1);
     }
 }
+//-----------------------

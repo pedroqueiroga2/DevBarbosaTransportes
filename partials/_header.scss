@@ -1,12 +1,11 @@
-header{
+header {
     width: 100%;
 }
 
 
 
 
-.header-content
-{
+.header-content {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -15,69 +14,68 @@ header{
 
 //header botões
 
-.header-link1, .header-link1 a, .header-link2, .header-link2 a
-{
-    color:$verdeB;  
+.header-link1,
+.header-link1 a,
+.header-link2,
+.header-link2 a {
+    color: $verdeB;
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.header-link1 a:hover, .header-link2 a:hover
-{
+.header-link1 a:hover,
+.header-link2 a:hover {
     animation: translateY 1s infinite alternate;
-    color:$AzulB;  
+    color: $AzulB;
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
 //Header Icons ----------
-.header-icons
-{
+.header-icons {
     display: flex;
     gap: 5px;
 }
-.header-icons a
-{
-    
-    i
-    {
+
+.header-icons a {
+
+    i {
         color: $verdeB;
     }
-    
+
 }
-    .header-icons a:hover
-    {
-        i
-        {
-            animation: translateY 0.8s infinite alternate;
-            color: $AzulB;
-        }
-        
+
+.header-icons a:hover {
+    i {
+        animation: translateY 0.8s infinite alternate;
+        color: $AzulB;
     }
 
+}
+
 @keyframes translateY {
-    from
-    {
+    from {
         transform: translateY(0) scale(1);
     }
-    to
-    {
+
+    to {
         transform: translateY(-8px) scale(1.1);
     }
 }
+
 //-----------------------
 
 //HEADER LOGO
 
-.header-logo
-{
+.header-logo {
     display: flex;
     align-items: center;
     justify-content: center;
     background: transparent;
 }
+
 .menu-icon {
     display: none;
     font-size: 24px;
@@ -85,21 +83,49 @@ header{
     color: $verdeB;
 }
 
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    text-align: right;
 
-@media screen and (max-width: 768px)
-{
-    .header-content
-    {
-        
-        justify-content: space-between;
+}
+
+.mobile-menu li {
+    border: 1px solid white;
+
+}
+
+// ---------------- Responsividade Header
+@media screen and (max-width: 768px) {
+    .header-content {
+
+        justify-content: center;
+
     }
-    .header-icons a, .header-link1, .header-link2
-    {
+
+    .header-icons a,
+    .header-link1,
+    .header-link2 {
         display: none;
     }
+
     .menu-icon {
+        margin-left: 60px;
         display: block;
     }
-    
-    
+
+    .mobile-menu li a {
+        color: $verdeB;
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .mobile-menu.show {
+        display: block;
+
+    }
+
+
 }

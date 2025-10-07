@@ -30,3 +30,21 @@ background-position: 50% 0;
 opacity: 0.9;
 
 }
+
+
+//------- Hero -------
+.hero
+{
+    color: $branco;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 14px;
+    h1
+    {
+        max-width: 50vw;
+        text-align: center;
+    }
+}

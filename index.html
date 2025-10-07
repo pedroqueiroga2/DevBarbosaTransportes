@@ -26,7 +26,7 @@
                 
                </div>
                <div class="header-link2">
-                <a href="#">SERVIÇOS</a>
+                <a href="#">CONTATO</a>
 
                </div>
 
@@ -41,15 +41,28 @@
                     <i class="fa fa-phone fa-2px"></i>
                 </a>
 
-                <div class="menu-icon" onclick="toggleMenu()">
+                <div class="menu-icon " onclick="toggleMenu()">
                     &#9776; 
                 </div>
+               
+
+
                </div>
             </nav>
+             <ul class="mobile-menu" id="mobileMenu">
+                    <li><a href="#">SOBRE</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                </ul>
 
             <main class="hero container"></main>
 
         </header>
     </div>
 </body>
+<script>
+    function toggleMenu()
+    {
+        document.getElementById("mobileMenu").classList.toggle("show");
+    }
+</script>
 </html>

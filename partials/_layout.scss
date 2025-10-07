@@ -1,50 +1,99 @@
-.container
-{
+.container {
     max-width: 1440px;
     margin: 0 auto;
 
 }
 
 //background
-.bg-home
-{
+.bg-home {
     position: relative;
-   
+    padding: 0 50px;
 }
 
 
-.bg-home::before
-{
-content: '';
-display: block;
-position: absolute;
-background-image: linear-gradient(to bottom, $gradientetopo, $AzulB), url("../assets/Banner.png");
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-z-index: -1;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: 50% 0;
-opacity: 0.9;
+.bg-home::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, $gradientetopo, $AzulB), url("../assets/Banner.png");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
 
 }
 
 
 //------- Hero -------
-.hero
-{
+.hero {
     color: $branco;
     min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     padding: 14px;
-    h1
-    {
-        max-width: 50vw;
+   
+
+
+    h1 {
+        line-height: 150%;
+        max-width: 520px;
         text-align: center;
+        padding: 0;
+        font-weight: 600;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 9px;
+        font-weight: 300;
     }
 }
+
+    .button-contact {
+
+        padding: 10px 30px;
+        margin-top: 45px;
+
+        font-size: 10px;
+        color: $branco;
+
+        background-color: $AzulB;
+
+        border: 1px solid $verdeB;
+        border-radius: 4px;
+    }
+
+    .button-contact:hover {
+        background-color: $verdeB;
+        color: $AzulB;
+        transition: 0.3s;
+        border: 2px solid $AzulB;
+    }
+
+    @media screen and (max-width:768px) {
+        
+  .hero
+  {
+    min-height: 50vh;
+    h1
+    {
+        font-size: 20px;
+    }
+    p
+    {
+        font-size: 50%;
+    }
+    
+  }
+           
+        
+        
+    }
+

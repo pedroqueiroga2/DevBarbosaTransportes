@@ -78,4 +78,28 @@ header{
     justify-content: center;
     background: transparent;
 }
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: $verdeB;
+}
 
+
+@media screen and (max-width: 768px)
+{
+    .header-content
+    {
+        
+        justify-content: space-between;
+    }
+    .header-icons a, .header-link1, .header-link2
+    {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    
+    
+}

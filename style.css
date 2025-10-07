@@ -111,6 +111,7 @@ header {
 
 .bg-home {
   position: relative;
+  padding: 0 50px;
 }
 
 .bg-home::before {
@@ -129,6 +130,56 @@ header {
   opacity: 0.9;
 }
 
+.hero {
+  color: #F1F1F1;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+}
+.hero h1 {
+  line-height: 150%;
+  max-width: 520px;
+  text-align: center;
+  padding: 0;
+  font-weight: 600;
+}
+.hero p {
+  margin-top: 20px;
+  font-size: 9px;
+  font-weight: 300;
+}
+
+.button-contact {
+  padding: 10px 30px;
+  margin-top: 45px;
+  font-size: 10px;
+  color: #F1F1F1;
+  background-color: #172C3B;
+  border: 1px solid #5CFFBB;
+  border-radius: 4px;
+}
+
+.button-contact:hover {
+  background-color: #5CFFBB;
+  color: #172C3B;
+  transition: 0.3s;
+  border: 2px solid #172C3B;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 50vh;
+  }
+  .hero h1 {
+    font-size: 20px;
+  }
+  .hero p {
+    font-size: 50%;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;

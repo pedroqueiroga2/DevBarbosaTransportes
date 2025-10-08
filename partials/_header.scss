@@ -1,5 +1,9 @@
 header {
     width: 100%;
+    position: relative;
+    z-index: 10 ;
+   
+   
 }
 
 
@@ -9,6 +13,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position:relative;
 }
 
 
@@ -74,6 +79,13 @@ header {
     align-items: center;
     justify-content: center;
     background: transparent;
+    margin: 0 auto;
+    img
+    {
+        max-height: 100px;
+        width: auto;
+        height: auto;
+    }
 }
 
 .menu-icon {
@@ -81,6 +93,18 @@ header {
     font-size: 24px;
     cursor: pointer;
     color: $verdeB;
+    width: 30px;
+    height: 50px;
+   
+    
+    
+}
+#icon-char
+{
+   
+    width: 100%;
+    height: 100%;
+    
 }
 
 .mobile-menu {
@@ -91,7 +115,7 @@ header {
 }
 
 .mobile-menu li {
-    border: 1px solid white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
 
 }
 
@@ -108,24 +132,42 @@ header {
     .header-link2 {
         display: none;
     }
+    
 
     .menu-icon {
         margin-left: 60px;
         display: block;
+        box-sizing: border-box;
     }
 
+    
+    .mobile-menu
+    {
+        flex-direction: column;
+        text-align: center;
+    }
     .mobile-menu li a {
         color: $verdeB;
         text-decoration: none;
         display: block;
-        padding: 15px;
+        padding: 16px;
         text-align: center;
+        background-color: rgba(255, 255, 255, 0.13);
+        color: $verdeB;   
     }
 
     .mobile-menu.show {
-        display: block;
-
+        display: flex;
+       position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        width: 100%;
+       
+        
+        
     }
+    
 
 
 }

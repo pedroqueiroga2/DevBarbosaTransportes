@@ -42,7 +42,7 @@
                 </a>
 
                 <div class="menu-icon " onclick="toggleMenu()">
-                    &#9776; 
+                    <span id="icon-char">&#9776;</span>
                 </div>
                
 
@@ -67,7 +67,22 @@
 <script>
     function toggleMenu()
     {
-        document.getElementById("mobileMenu").classList.toggle("show");
+
+         document.getElementById("mobileMenu").classList.toggle("show");
+        const iconChar = document.getElementById('icon-char')
+        const menuIconContainer = document.querySelector('.menu-icon');
+
+        if(iconChar.innerHTML.trim() == '☰')
+        {
+            iconChar.innerHTML = '×';
+            menuIconContainer.classList.add('menu-opened');
+        }
+        else
+        {
+            iconChar.innerHTML = '☰';
+            menuIconContainer.classList.remove('menu-opened');
+        }
+       
     }
 </script>
 </html>

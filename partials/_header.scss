@@ -82,9 +82,11 @@ header {
     margin: 0 auto;
     img
     {
-        max-height: 100px;
-        width: auto;
+         max-height: 100px;
+        width: auto !important;    /* impede a regra global img{width:100%} de forçar largura */
+        max-width: 100%;           /* protege em telas pequenas */
         height: auto;
+        display: block;
     }
 }
 
@@ -95,7 +97,7 @@ header {
     color: $verdeB;
     width: 30px;
     height: 50px;
-   
+
     
     
 }
@@ -111,11 +113,14 @@ header {
     display: none;
     flex-direction: column;
     text-align: right;
-
+    gap: 3px;
 }
 
 .mobile-menu li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+
+    border: 1px solid rgba(0, 0, 0, 0.098);
+    background-color: rgba(0, 0, 0, 0.066);
+    border-radius: 1px;
 
 }
 
@@ -152,13 +157,14 @@ header {
         display: block;
         padding: 16px;
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.13);
+       
         color: $verdeB;   
+        
     }
 
     .mobile-menu.show {
         display: flex;
-       position: absolute;
+       position: relative;
         z-index: 1;
         left: 0;
         right: 0;

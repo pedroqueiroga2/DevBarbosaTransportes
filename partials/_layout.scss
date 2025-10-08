@@ -8,6 +8,7 @@
 .bg-home {
     position: relative;
     padding: 0 50px;
+    
 }
 
 
@@ -82,6 +83,10 @@
   .hero
   {
     min-height: 50vh;
+    max-height: 60vh;
+   
+    
+   
     h1
     {
         font-size: 20px;

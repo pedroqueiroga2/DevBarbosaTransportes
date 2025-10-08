@@ -1,0 +1,179 @@
+header {
+    width: 100%;
+    position: relative;
+    z-index: 10 ;
+   
+   
+}
+
+
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position:relative;
+}
+
+
+//header botões
+
+.header-link1,
+.header-link1 a,
+.header-link2,
+.header-link2 a {
+    color: $verdeB;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-link1 a:hover,
+.header-link2 a:hover {
+    animation: translateY 1s infinite alternate;
+    color: $AzulB;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+//Header Icons ----------
+.header-icons {
+    display: flex;
+    gap: 5px;
+}
+
+.header-icons a {
+
+    i {
+        color: $verdeB;
+    }
+
+}
+
+.header-icons a:hover {
+    i {
+        animation: translateY 0.8s infinite alternate;
+        color: $AzulB;
+    }
+
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+//-----------------------
+
+//HEADER LOGO
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+   
+    img
+    {
+         max-height: 100px;
+        width: auto !important;    /* impede a regra global img{width:100%} de forçar largura */
+        max-width: 100%;           /* protege em telas pequenas */
+        height: auto;
+        display: block;
+    }
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: $verdeB;
+    width: 30px;
+    height: 50px;
+
+    
+    
+}
+#icon-char
+{
+   
+    width: 100%;
+    height: 100%;
+    
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    text-align: right;
+    gap: 3px;
+}
+
+.mobile-menu li {
+
+    border: 1px solid rgba(0, 0, 0, 0.098);
+    background-color: rgba(0, 0, 0, 0.066);
+    border-radius: 1px;
+
+}
+
+// ---------------- Responsividade Header
+@media screen and (max-width: 768px) {
+    .header-content {
+
+        justify-content: center;
+
+    }
+
+    .header-icons a,
+    .header-link1,
+    .header-link2 {
+        display: none;
+    }
+    
+
+    .menu-icon {
+        margin-left: 60px;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    
+    .mobile-menu
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    .mobile-menu li a {
+        color: $verdeB;
+        text-decoration: none;
+        display: block;
+        padding: 16px;
+        text-align: center;
+       
+        color: $verdeB;   
+        
+    }
+
+    .mobile-menu.show {
+        display: flex;
+       position: relative;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        width: 100%;
+       
+        
+        
+    }
+    
+
+
+}

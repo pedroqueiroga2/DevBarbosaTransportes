@@ -6,7 +6,11 @@
     outline: 0;
 
 }
-@import "partials/_colors.scss";
+@import "partials/_colors";
+@import "partials/_header";
+@import "partials/_layout";
+
+
 body
 {
     font-family: 'Sora', sans-serif;
@@ -30,6 +34,26 @@ img
 }   
 a
 {
+    margin: 0;
+    padding: 0;
     cursor: pointer;
     text-decoration: none;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: $verdeB;
+
+}
+li a
+{
+
+    padding:0;
+    text-decoration: none;
+}
+.header-icons
+{
+    display: flex;
 }

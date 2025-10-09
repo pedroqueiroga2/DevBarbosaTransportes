@@ -150,7 +150,7 @@ header {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, #767676, #172C3B), url("../assets/Banner.png");
+  background-image: linear-gradient(to bottom, #767676, #172C3B);
   left: 0;
   top: 0;
   width: 100%;
@@ -159,7 +159,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
-  opacity: 0.9;
 }
 
 .hero {
@@ -211,6 +210,53 @@ header {
   }
   .hero p {
     font-size: 50%;
+  }
+}
+.about {
+  background-color: #172C3B;
+  color: #F1F1F1;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 34px 14px 64px 14px;
+}
+.about-content img {
+  max-width: 400px;
+}
+
+.about-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.about-description {
+  flex-direction: column;
+}
+.about-description h2 {
+  font-weight: 600;
+  font-size: 34px;
+  margin-bottom: 50px;
+}
+.about-description p {
+  font-size: 14px;
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-content img {
+    display: none;
+  }
+  .about-description h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 }
 body {

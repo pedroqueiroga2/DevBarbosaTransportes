@@ -254,6 +254,10 @@ header {
   .about-content img {
     display: none;
   }
+  .about-description h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
 }
 body {
   font-family: "Sora", sans-serif;

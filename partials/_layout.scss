@@ -105,5 +105,54 @@
  .about
  {
     background-color: $AzulB;
+    color: $branco;
+ }
+
+ .about-content
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 34px 14px 64px 14px;
+    img
+    {
+        max-width:400px;
+    }
+
+ }
+ .about-content div
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+ }
+ .about-description 
+ {
+    flex-direction: column;
+    h2{
+        font-weight: 600;
+        font-size: 34px;
+        margin-bottom: 50px;
+    }
+    p
+    {
+        font-size: 14px;
+        width: 70%;
+    }
+ }
+
+ @media screen  and (max-width:768px) {
+    .about-content
+    {
+        flex-direction: column;
+        img
+        {
+            display: none;
+        }
+    }
+
+    
  }
 

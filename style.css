@@ -259,6 +259,26 @@ header {
     margin-bottom: 20px;
   }
 }
+.services {
+  padding-top: 14px;
+  max-width: 1900px;
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: #F1F1F1;
+}
+
+.services-texts {
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+}
+.services-texts h2 {
+  font-size: 34px;
+  font-weight: 600;
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;

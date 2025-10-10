@@ -164,3 +164,31 @@
     
  }
 
+ .services
+ {
+    padding-top: 14px;
+    max-width: 1900px;
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: $branco;
+
+ }
+ .services-texts
+ {
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+    h2
+    {
+        font-size: 34px;
+        font-weight: 600;
+    }
+    p
+    {
+
+    }
+ }
+

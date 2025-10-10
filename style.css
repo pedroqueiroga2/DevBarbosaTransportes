@@ -260,11 +260,15 @@ header {
   }
 }
 .services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 14px;
   max-width: 1900px;
   overflow: hidden;
   min-height: 100vh;
   background-color: #F1F1F1;
+  padding: 10px;
 }
 
 .services-texts {
@@ -279,6 +283,46 @@ header {
   font-size: 34px;
   font-weight: 600;
 }
+.services-texts p {
+  font-weight: 400;
+}
+
+.freights {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  gap: 14px;
+}
+
+.freight {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 -1px 17px -4px rgba(0, 0, 0, 0.304);
+  overflow: hidden;
+}
+.freight img {
+  width: 100%;
+  max-width: 354px;
+  transition: transform 0.3s;
+}
+
+.freight img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.freights-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: white;
+  z-index: 2;
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;

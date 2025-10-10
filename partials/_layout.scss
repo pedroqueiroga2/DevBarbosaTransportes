@@ -219,7 +219,7 @@
  }
  .freight img:hover
  {
-    transform: scale(1.01);
+    transform: scale(1.2);
     z-index: 1;
  }
  .freights-info
@@ -227,6 +227,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 14px;
+    background-color: white;
+    z-index: 2;
  }
+
 
 

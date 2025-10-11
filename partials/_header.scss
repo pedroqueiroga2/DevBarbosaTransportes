@@ -83,8 +83,8 @@ header {
     img
     {
          max-height: 100px;
-        width: auto !important;    /* impede a regra global img{width:100%} de forçar largura */
-        max-width: 100%;           /* protege em telas pequenas */
+        width: auto !important;    
+        max-width: 100%;           
         height: auto;
         display: block;
     }

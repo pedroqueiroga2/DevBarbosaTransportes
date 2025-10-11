@@ -259,6 +259,103 @@ header {
     margin-bottom: 20px;
   }
 }
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 100px;
+  max-width: 1900px;
+  min-height: 500px;
+  overflow: hidden;
+  background-color: #F1F1F1;
+  overflow: hidden;
+}
+
+.services-texts {
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+}
+.services-texts h2 {
+  font-size: 34px;
+  font-weight: 600;
+}
+.services-texts p {
+  font-weight: 400;
+}
+
+.freights {
+  margin-top: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  gap: 14px;
+}
+
+.freight {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 -1px 17px -4px rgba(0, 0, 0, 0.304);
+  overflow: hidden;
+  flex: 1;
+}
+.freight img {
+  width: 100%;
+  max-width: 354px;
+  transition: transform 0.3s;
+}
+
+.freight img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.freights-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: white;
+  z-index: 2;
+}
+
+.freights-info button {
+  background-color: #CA0000;
+  color: #F1F1F1;
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+}
+
+.freights-info button:hover {
+  background-color: rgba(255, 0, 0, 0.178);
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    min-height: 1300px;
+    padding: 10px 14px;
+  }
+  .services-texts h2 {
+    font-size: 30px;
+  }
+  .services-texts p {
+    width: 100%;
+    font-size: 10px;
+  }
+  .freights {
+    flex-direction: column;
+  }
+  .freight {
+    width: 80%;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;

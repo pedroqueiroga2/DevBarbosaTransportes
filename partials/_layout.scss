@@ -205,6 +205,7 @@
     justify-content: center;
     max-width: 1000px;  
     gap: 14px;
+    
  }
  .freight
  {
@@ -219,6 +220,7 @@
         width: 100%;
         max-width: 354px;
         transition: transform 0.3s;
+     
     }
  }
  .freight img:hover
@@ -233,7 +235,14 @@
     justify-content: space-between;
     padding: 14px;
     background-color: white;
-    z-index: 2;
+    z-index: 99;
+    height: 65px;
+ }
+ .freights-info strong
+ {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
  }
  .freights-info button
  {

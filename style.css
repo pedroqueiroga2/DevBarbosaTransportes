@@ -321,7 +321,14 @@ header {
   justify-content: space-between;
   padding: 14px;
   background-color: white;
-  z-index: 2;
+  z-index: 99;
+  height: 65px;
+}
+
+.freights-info strong {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
 }
 
 .freights-info button {
@@ -393,6 +400,11 @@ ul {
 li a {
   padding: 0;
   text-decoration: none;
+}
+
+section {
+  margin: 0;
+  padding: 0;
 }
 
 .header-icons {

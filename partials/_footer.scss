@@ -59,3 +59,24 @@ footer
     }
     
 }
+
+// -------- botão whatsapp ---------
+.btn-whatsapp 
+{
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+    img
+    {
+         max-width: 54px;
+         transition: transform 0.3s;
+    }
+    
+
+    img:hover
+    {
+        
+        transform: scale(1.1);
+    }
+}

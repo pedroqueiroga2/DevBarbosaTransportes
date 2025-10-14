@@ -225,8 +225,8 @@
 
 }
 
-.freight {
-
+.freight  {
+    
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -240,6 +240,10 @@
         transition: transform 0.3s;
 
     }
+}
+.freight a
+{
+    color: $branco;
 }
 
 .freight img:hover {

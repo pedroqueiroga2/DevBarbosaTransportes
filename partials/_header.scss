@@ -27,6 +27,7 @@ header {
     display: flex;
     align-items: center;
     gap: 30px;
+    font-size: 30px;
 }
 
 .header-link1 a:hover,
@@ -40,8 +41,10 @@ header {
 
 //Header Icons ----------
 .header-icons {
+    font-size: 30px;
     display: flex;
     gap: 5px;
+
 }
 
 .header-icons a {
@@ -83,7 +86,7 @@ header {
     img
     {
          max-height: 100px;
-        width: auto !important;    
+         
         max-width: 100%;           
         height: auto;
         display: block;

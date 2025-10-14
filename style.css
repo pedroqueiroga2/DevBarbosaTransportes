@@ -250,6 +250,7 @@ header {
   margin-bottom: 50px;
 }
 .about-description p {
+  text-align: center;
   font-weight: 300;
   font-size: 30px;
   width: 100%;
@@ -264,13 +265,13 @@ header {
     display: none;
   }
   .about-description h2 {
-    font-size: 30px;
+    font-size: 15px;
     margin-bottom: 20px;
   }
   .about-description p {
     padding: 10px;
     max-width: 400px;
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 .services {

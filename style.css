@@ -205,7 +205,7 @@ header {
     max-height: 60vh;
   }
   .hero h1 {
-    font-size: 20px;
+    font-size: 22px;
   }
   .hero p {
     font-size: 10px;
@@ -265,7 +265,7 @@ header {
     display: none;
   }
   .about-description h2 {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
   .about-description p {
@@ -369,7 +369,7 @@ header {
     padding: 50px 0px;
   }
   .services-texts h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
   .services-texts p {
     width: 100%;

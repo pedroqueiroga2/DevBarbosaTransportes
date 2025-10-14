@@ -49,13 +49,13 @@
         text-align: center;
         padding: 0;
         font-weight: 600;
-        font-size: 70px;
+        font-size: 4rem;
     }
 
     p {
 
         margin-top: 20px;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 400;
     }
 }
@@ -64,7 +64,7 @@
 
     padding: 15px 40px;
     margin-top: 45px;
-    font-size: 25px;
+    font-size: 1.3rem;
 
     color: $branco;
 
@@ -81,7 +81,7 @@
     border: 2px solid $AzulB;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
 
     .hero {
 
@@ -133,7 +133,7 @@
 .about-content div {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     flex: 1;
 }
 
@@ -142,19 +142,20 @@
 
     h2 {
         font-weight: 600;
-        font-size: 44px;
+        font-size: 2rem;
         margin-bottom: 50px;
+        text-align: left;
     }
 
     p {
         text-align:left;
         font-weight: 300;
-        font-size: 30px;
+        font-size: 1rem;
         width: 100%;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
     .about-content {
        gap: 0;
         flex-direction: column;
@@ -173,7 +174,7 @@
         {
             padding: 10px;
             max-width: 400px;
-            font-size: 10px;
+            font-size: 0.9rem;
         }
     }
 
@@ -205,12 +206,12 @@
     gap: 24px;
 
     h2 {
-        font-size: 34px;
+        font-size: 2rem;
         font-weight: 600;
     }
 
     p {
-
+        font-size: 0.9rem;
         font-weight: 400;
     }
 }
@@ -262,7 +263,7 @@
 }
 
 .freights-info strong {
-    font-size: 14px;
+    font-size: 0.9rem;
     display: flex;
     align-items: center;
 }
@@ -280,7 +281,7 @@
     color: $preto;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
     .services {
         min-height: 1300px;
     

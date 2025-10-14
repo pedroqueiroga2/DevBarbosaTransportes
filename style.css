@@ -101,7 +101,7 @@ header {
   border-radius: 1px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .header-content {
     justify-content: center;
   }
@@ -174,18 +174,18 @@ header {
   text-align: center;
   padding: 0;
   font-weight: 600;
-  font-size: 70px;
+  font-size: 4rem;
 }
 .hero p {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
 .button-contact {
   padding: 15px 40px;
   margin-top: 45px;
-  font-size: 25px;
+  font-size: 1.3rem;
   color: #F1F1F1;
   background-color: #172C3B;
   border: 1px solid #5CFFBB;
@@ -199,7 +199,7 @@ header {
   border: 2px solid #172C3B;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .hero {
     min-height: 30vh;
     max-height: 60vh;
@@ -237,7 +237,6 @@ header {
 .about-content div {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex: 1;
 }
 
@@ -246,17 +245,18 @@ header {
 }
 .about-description h2 {
   font-weight: 600;
-  font-size: 44px;
+  font-size: 2rem;
   margin-bottom: 50px;
+  text-align: left;
 }
 .about-description p {
   text-align: left;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 1rem;
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .about-content {
     gap: 0;
     flex-direction: column;
@@ -271,7 +271,7 @@ header {
   .about-description p {
     padding: 10px;
     max-width: 400px;
-    font-size: 10px;
+    font-size: 0.9rem;
   }
 }
 .services {
@@ -296,10 +296,11 @@ header {
   gap: 24px;
 }
 .services-texts h2 {
-  font-size: 34px;
+  font-size: 2rem;
   font-weight: 600;
 }
 .services-texts p {
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
@@ -346,7 +347,7 @@ header {
 }
 
 .freights-info strong {
-  font-size: 14px;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
 }
@@ -363,7 +364,7 @@ header {
   color: #000000;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .services {
     min-height: 1300px;
     padding: 50px 0px;

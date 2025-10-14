@@ -325,6 +325,10 @@ header {
   transition: transform 0.3s;
 }
 
+.freight a {
+  color: #F1F1F1;
+}
+
 .freight img:hover {
   transform: scale(1.2);
   z-index: 1;

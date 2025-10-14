@@ -10,7 +10,7 @@
 .bg-home {
     position: relative;
     padding: 0 50px;
-   
+
 }
 
 
@@ -24,10 +24,8 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    
+
+
 
 }
 
@@ -36,200 +34,224 @@
 .hero {
     color: $branco;
     min-height: 80vh;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 14px;
-   
+
 
 
     h1 {
         line-height: 150%;
-        max-width: 520px;
+        width: 100%;
         text-align: center;
         padding: 0;
         font-weight: 600;
+        font-size: 70px;
     }
 
     p {
+
         margin-top: 20px;
-        font-size: 9px;
-        font-weight: 300;
+        font-size: 20px;
+        font-weight: 400;
     }
 }
 
+.button-contact {
+
+    padding: 15px 40px;
+    margin-top: 45px;
+    font-size: 25px;
+
+    color: $branco;
+
+    background-color: $AzulB;
+
+    border: 1px solid $verdeB;
+    border-radius: 4px;
+}
+
+.button-contact:hover {
+    background-color: $verdeB;
+    color: $AzulB;
+    transition: 0.3s;
+    border: 2px solid $AzulB;
+}
+
+@media screen and (max-width:768px) {
+
+    .hero {
+
+
+        min-height: 30vh;
+        max-height: 60vh;
+
+
+
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 7px;
+        }
+
+    }
+
     .button-contact {
-
+        margin-top: 35px;
         padding: 10px 30px;
-        margin-top: 45px;
-
         font-size: 10px;
-        color: $branco;
-
-        background-color: $AzulB;
-
-        border: 1px solid $verdeB;
-        border-radius: 4px;
     }
 
-    .button-contact:hover {
-        background-color: $verdeB;
-        color: $AzulB;
-        transition: 0.3s;
-        border: 2px solid $AzulB;
-    }
+}
 
-    @media screen and (max-width:768px) {
-        
-  .hero
-  {
-    
-    min-height: 30vh;
-    max-height: 60vh;
-   
-    
-   
-    h1
-    {
-        font-size: 20px;
-    }
-    p
-    {
-        font-size: 9px;
-    }
-    
-  }
-           
- }
 
- .about
- {
+.about {
     background-color: $AzulB;
     color: $branco;
- }
+}
 
- .about-content
- {
+.about-content {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
     padding: 34px 14px 64px 14px;
-    img
-    {
-        max-width:400px;
+    max-width: 1500px;
+    flex: 1;
+    gap: 100px;
+    img {
+        max-width: 100%;
     }
 
- }
- .about-content div
- {
+}
+
+.about-content div {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex:1;
- }
- .about-description 
- {
+    flex: 1;
+}
+
+.about-description {
     flex-direction: column;
-    h2{
+
+    h2 {
         font-weight: 600;
-        font-size: 34px;
+        font-size: 44px;
         margin-bottom: 50px;
     }
-    p
-    {
-        font-size: 14px;
-        width: 70%;
-    }
- }
 
- @media screen  and (max-width:768px) {
-    .about-content
-    {
+    p {
+        font-weight: 300;
+        font-size: 30px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about-content {
+
+       gap: 0;
         flex-direction: column;
-        img
-        {
+
+        img {
             display: none;
         }
     }
-    .about-description
-    {
-        h2
-        {
+
+    .about-description {
+        h2 {
             font-size: 30px;
             margin-bottom: 20px;
         }
+        p
+        {
+            padding: 10px;
+            max-width: 400px;
+            font-size: 14px;
+        }
     }
 
-    
- }
 
- .services
- {
+}
+
+.services {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 100px;
-    
+    padding: 0 40px;
+
+    padding-top: 24px;
+    padding-bottom: 100px;
+
     max-width: 1900px;
     min-height: 500px;
-    overflow: hidden;
+
     background-color: $branco;
     overflow: hidden;
- }
- .services-texts
- {
+}
+
+.services-texts {
     max-width: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 14px;
-    h2
-    {
+    gap: 24px;
+
+    h2 {
         font-size: 34px;
         font-weight: 600;
     }
-    p
-    {
-      
+
+    p {
+
         font-weight: 400;
     }
- }
- .freights
- {
+}
+
+.freights {
     margin-top: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1000px;  
-    gap: 14px;
-    
- }
- .freight
- {
+    max-width: 1000px;
+    gap: 24px;
 
+}
+
+.freight  {
+    
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 -1px 17px -4px rgba(0, 0, 0, 0.304);
     overflow: hidden;
     flex: 1;
-    img{
+
+    img {
         width: 100%;
         max-width: 354px;
         transition: transform 0.3s;
-     
+
     }
- }
- .freight img:hover
- {
+}
+.freight a
+{
+    color: $branco;
+}
+
+.freight img:hover {
     transform: scale(1.2);
     z-index: 1;
- }
- .freights-info
- {
+}
+
+.freights-info {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -237,56 +259,52 @@
     background-color: white;
     z-index: 99;
     height: 65px;
- }
- .freights-info strong
- {
+}
+
+.freights-info strong {
     font-size: 14px;
     display: flex;
     align-items: center;
- }
- .freights-info button
- {
+}
+
+.freights-info button {
     background-color: $vermelho;
     color: $branco;
     padding: 6px;
     border-radius: 4px;
     border: none;
- }
-  .freights-info button:hover
- {
+}
+
+.freights-info button:hover {
     background-color: rgba(255, 0, 0, 0.178);
     color: $preto;
- }
+}
 
- @media screen and (max-width:768px)
- {
-    .services
-    {
+@media screen and (max-width:768px) {
+    .services {
         min-height: 1300px;
-        padding: 10px 14px;
+    
+        padding: 50px 0px;
     }
-    .services-texts
-    {
-        h2
-        {
+
+    .services-texts {
+        h2 {
             font-size: 30px;
         }
-        p
-        {
+
+        p {
             width: 100%;
             font-size: 10px;
         }
     }
-    .freights
-    {
+
+    .freights {
         flex-direction: column;
     }
-    .freight
-    {
-        width: 80%;
+
+    .freight {
+        width: 100%;
+
     }
-    
- }
 
-
-
+}

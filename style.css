@@ -26,6 +26,7 @@ header {
   display: flex;
   align-items: center;
   gap: 30px;
+  font-size: 30px;
 }
 
 .header-link1 a:hover,
@@ -38,6 +39,7 @@ header {
 }
 
 .header-icons {
+  font-size: 30px;
   display: flex;
   gap: 5px;
 }
@@ -67,7 +69,6 @@ header {
 }
 .header-logo img {
   max-height: 100px;
-  width: auto !important;
   max-width: 100%;
   height: auto;
   display: block;
@@ -155,14 +156,12 @@ header {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
 }
 
 .hero {
   color: #F1F1F1;
   min-height: 80vh;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,21 +170,22 @@ header {
 }
 .hero h1 {
   line-height: 150%;
-  max-width: 520px;
+  width: 100%;
   text-align: center;
   padding: 0;
   font-weight: 600;
+  font-size: 70px;
 }
 .hero p {
   margin-top: 20px;
-  font-size: 9px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .button-contact {
-  padding: 10px 30px;
+  padding: 15px 40px;
   margin-top: 45px;
-  font-size: 10px;
+  font-size: 25px;
   color: #F1F1F1;
   background-color: #172C3B;
   border: 1px solid #5CFFBB;
@@ -208,7 +208,12 @@ header {
     font-size: 20px;
   }
   .hero p {
-    font-size: 9px;
+    font-size: 7px;
+  }
+  .button-contact {
+    margin-top: 35px;
+    padding: 10px 30px;
+    font-size: 10px;
   }
 }
 .about {
@@ -221,9 +226,12 @@ header {
   justify-content: center;
   align-items: center;
   padding: 34px 14px 64px 14px;
+  max-width: 1500px;
+  flex: 1;
+  gap: 100px;
 }
 .about-content img {
-  max-width: 400px;
+  max-width: 100%;
 }
 
 .about-content div {
@@ -238,16 +246,18 @@ header {
 }
 .about-description h2 {
   font-weight: 600;
-  font-size: 34px;
+  font-size: 44px;
   margin-bottom: 50px;
 }
 .about-description p {
-  font-size: 14px;
-  width: 70%;
+  font-weight: 300;
+  font-size: 30px;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .about-content {
+    gap: 0;
     flex-direction: column;
   }
   .about-content img {
@@ -257,15 +267,21 @@ header {
     font-size: 30px;
     margin-bottom: 20px;
   }
+  .about-description p {
+    padding: 10px;
+    max-width: 400px;
+    font-size: 14px;
+  }
 }
 .services {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 100px;
+  padding: 0 40px;
+  padding-top: 24px;
+  padding-bottom: 100px;
   max-width: 1900px;
   min-height: 500px;
-  overflow: hidden;
   background-color: #F1F1F1;
   overflow: hidden;
 }
@@ -276,7 +292,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 14px;
+  gap: 24px;
 }
 .services-texts h2 {
   font-size: 34px;
@@ -292,7 +308,7 @@ header {
   align-items: center;
   justify-content: center;
   max-width: 1000px;
-  gap: 14px;
+  gap: 24px;
 }
 
 .freight {
@@ -307,6 +323,10 @@ header {
   width: 100%;
   max-width: 354px;
   transition: transform 0.3s;
+}
+
+.freight a {
+  color: #F1F1F1;
 }
 
 .freight img:hover {
@@ -346,7 +366,7 @@ header {
 @media screen and (max-width: 768px) {
   .services {
     min-height: 1300px;
-    padding: 10px 14px;
+    padding: 50px 0px;
   }
   .services-texts h2 {
     font-size: 30px;
@@ -359,7 +379,7 @@ header {
     flex-direction: column;
   }
   .freight {
-    width: 80%;
+    width: 100%;
   }
 }
 footer {

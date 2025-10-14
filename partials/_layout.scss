@@ -173,7 +173,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 100px;
+    padding: 0 40px;
+
+    padding-top: 24px;
+    padding-bottom: 100px;
 
     max-width: 1900px;
     min-height: 500px;
@@ -188,7 +191,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 14px;
+    gap: 24px;
 
     h2 {
         font-size: 34px;
@@ -207,7 +210,7 @@
     align-items: center;
     justify-content: center;
     max-width: 1000px;
-    gap: 14px;
+    gap: 24px;
 
 }
 

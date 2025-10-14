@@ -96,7 +96,7 @@
         }
 
         p {
-            font-size: 7px;
+            font-size: 10px;
         }
 
     }
@@ -155,7 +155,6 @@
 
 @media screen and (max-width:768px) {
     .about-content {
-
        gap: 0;
         flex-direction: column;
 
@@ -269,7 +268,7 @@
 
 .freights-info button {
     background-color: $vermelho;
-    color: $branco;
+    
     padding: 6px;
     border-radius: 4px;
     border: none;

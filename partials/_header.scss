@@ -116,14 +116,14 @@ header {
     display: none;
     flex-direction: column;
     text-align: right;
-    
+    gap: 3px;
 }
 
 .mobile-menu li {
 
     border: 1px solid rgba(0, 0, 0, 0.098);
-    background-color: $AzulB;
-    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.066);
+    border-radius: 1px;
 
 }
 
@@ -167,7 +167,7 @@ header {
 
     .mobile-menu.show {
         display: flex;
-       position: absolute;
+       position: static;
         z-index: 1;
         left: 0;
         right: 0;
@@ -180,3 +180,4 @@ header {
 
 
 }
+

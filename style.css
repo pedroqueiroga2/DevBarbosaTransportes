@@ -145,6 +145,7 @@ header {
   position: relative;
   padding: 0 50px;
   z-index: 1;
+  overflow: hidden;
 }
 
 .bg-home::before {

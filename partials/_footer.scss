@@ -9,10 +9,10 @@ footer
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1920px;
     background-color: $AzulB;
     gap: 30px;
     padding: 14px;
+    overflow: hidden;
 }
 .footer-icons
 {

@@ -129,7 +129,7 @@ header {
   }
   .mobile-menu.show {
     display: flex;
-    position: relative;
+    position: absolute;
     z-index: 1;
     left: 0;
     right: 0;
@@ -144,18 +144,22 @@ header {
 .bg-home {
   position: relative;
   padding: 0 50px;
+  z-index: 1;
 }
 
 .bg-home::before {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, #767676, #172C3B);
+  background-image: linear-gradient(to bottom, rgba(65, 65, 65, 0.658), #172C3B), url("/assets/Banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 .hero {
@@ -201,8 +205,7 @@ header {
 
 @media screen and (max-width: 900px) {
   .hero {
-    min-height: 30vh;
-    max-height: 60vh;
+    min-height: 70vh;
   }
   .hero h1 {
     font-size: 1rem;

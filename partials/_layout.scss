@@ -52,26 +52,32 @@
 
 
 
+   h1, p {
+        width: 100%;
+        max-width: 400px; 
+        margin: 0 auto;   
+        text-align: center; 
+    }
+
     h1 {
         line-height: 150%;
-        width: 100%;
-        text-align: center;
+       
         padding: 0;
         font-weight: 600;
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     p {
-
+    
         margin-top: 20px;
-        font-size: 1.25rem;
-        font-weight: 400;
+        font-size: 0.8rem;
+        font-weight: 300;
     }
 }
 
 .button-contact {
 
-    padding: 15px 40px;
+    padding: 14px 35px;
     margin-top: 45px;
     font-size: 1.3rem;
 
@@ -80,7 +86,7 @@
     background-color: $AzulB;
 
     border: 1px solid $verdeB;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 .button-contact:hover {
@@ -90,7 +96,7 @@
     border: 2px solid $AzulB;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:768px) {
 
     .hero {
 
@@ -101,10 +107,12 @@
 
 
         h1 {
+            
             font-size: 1rem;
         }
 
         p {
+           
             font-size: 0.625rem;
         }
 
@@ -167,7 +175,7 @@
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:768px) {
     .about-content {
         gap: 0;
         flex-direction: column;
@@ -292,7 +300,7 @@
     color: $preto;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:768px) {
     .services {
         min-height: 1300px;
 

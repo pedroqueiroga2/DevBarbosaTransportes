@@ -281,7 +281,6 @@ header {
   padding: 0 40px;
   padding-top: 24px;
   padding-bottom: 100px;
-  max-width: 1900px;
   min-height: 500px;
   background-color: #F1F1F1;
   overflow: hidden;
@@ -393,10 +392,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1920px;
   background-color: #172C3B;
   gap: 30px;
   padding: 14px;
+  overflow: hidden;
 }
 
 .footer-icons {

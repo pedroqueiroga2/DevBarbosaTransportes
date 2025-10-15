@@ -92,13 +92,12 @@ header {
   display: none;
   flex-direction: column;
   text-align: right;
-  gap: 3px;
 }
 
 .mobile-menu li {
   border: 1px solid rgba(0, 0, 0, 0.098);
-  background-color: rgba(0, 0, 0, 0.066);
-  border-radius: 1px;
+  background-color: #172C3B;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -125,7 +124,6 @@ header {
     display: block;
     padding: 16px;
     text-align: center;
-    color: #5CFFBB;
   }
   .mobile-menu.show {
     display: flex;

@@ -10,7 +10,7 @@
 .bg-home {
     position: relative;
     padding: 0 50px;
-
+z-index: 1;
 }
 
 
@@ -18,14 +18,24 @@
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom, $gradientetopo, $AzulB);
+    background-image: linear-gradient(
+            to bottom,
+            rgba(65, 65, 65, 0.658),
+            $AzulB
+        ),
+        url('/assets/Banner.png');
+
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
 
-
+    z-index: 0;
 
 }
 
@@ -86,8 +96,8 @@
     .hero {
 
 
-        min-height: 30vh;
-        max-height: 60vh;
+        min-height: 70vh;
+        
 
 
 
